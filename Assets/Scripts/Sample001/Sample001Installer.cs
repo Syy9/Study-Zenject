@@ -1,6 +1,17 @@
 using UnityEngine;
 using Zenject;
-
+/// <summary>
+/// Bind lifecycle check
+/// Lifecycle is ↓
+/// 1. InstallBindings Start
+/// 2. InstallBindings End
+/// 3. string bind value
+/// 4. Null
+/// 5. Sample001Installer Awake
+/// 6. Sample001Installer Start
+/// 7. Sample001Installer Update
+/// </summary>
+/// <typeparam name="Sample001Installer"></typeparam>
 public class Sample001Installer : MonoInstaller<Sample001Installer>
 {
     void Awake()
