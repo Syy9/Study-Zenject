@@ -1,21 +1,21 @@
 using UnityEngine;
 using Zenject;
 
-public class Test001Installer : MonoInstaller<Test001Installer>
+public class Sample001Installer : MonoInstaller<Sample001Installer>
 {
     void Awake()
     {
-        Debug.Log("Test001Installer Awake");
+        Debug.Log("Sample001Installer Awake");
     }
 
     void Start()
     {
-        Debug.Log("Test001Installer Start");
+        Debug.Log("Sample001Installer Start");
     }
 
     void Update()
     {
-        Debug.Log("Test001Installer Update");
+        Debug.Log("Sample001Installer Update");
     }
 
     public override void InstallBindings()
