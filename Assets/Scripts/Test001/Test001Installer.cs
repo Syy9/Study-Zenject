@@ -12,8 +12,10 @@ public class Test001Installer : MonoInstaller<Test001Installer>
 
 public class Hoge
 {
+    [Inject] string fieldBindValue;
     public Hoge(string bindValue)
     {
         Debug.Log(bindValue);
+        Debug.Log(fieldBindValue);
     }
 }
